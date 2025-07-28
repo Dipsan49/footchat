@@ -1,0 +1,11 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+footchat/__pycache__/
+
+# Virtual environments
+.venv/
+
+# PyCharm project files
+.idea/
