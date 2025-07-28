@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'rest_framework'
-    'core_footchat'
+    'rest_framework',
+    'core_footchat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
