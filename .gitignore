@@ -9,3 +9,6 @@ footchat/__pycache__/
 
 # PyCharm project files
 .idea/
+
+# Config file
+config
