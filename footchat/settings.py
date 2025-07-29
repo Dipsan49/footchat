@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
+import yaml
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,6 +28,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Build path to the config file
+CONFIG_PATH = os.path.join(BASE_DIR, 'config', 'application.yml')
+
+with open(CONFIG_PATH, 'r') as f:
+    config = yaml.safe_load(f)
+
+
+OPENAI_API_KEY = config['openai']['api_key']
 
 # Application definition
 
