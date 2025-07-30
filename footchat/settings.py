@@ -36,6 +36,9 @@ with open(CONFIG_PATH, 'r') as f:
 
 
 OPENAI_API_KEY = config['openai']['api_key']
+OPENAI_MODEL = config['openai']['model']
+
+CHATBOT_PROMPT = config['chatbot_prompt']
 
 # Application definition
 
